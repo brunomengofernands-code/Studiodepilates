@@ -1,11 +1,23 @@
-// 1) Copie este arquivo para firebase-config.js.
-// 2) Substitua os valores pelos dados do seu projeto: Firebase Console > Configurações do projeto > Seus apps.
-window.FIREBASE_CONFIG = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://SEU_PROJECT_ID-default-rtdb.firebaseio.com",
-  projectId: "SEU_PROJECT_ID",
-  storageBucket: "SEU_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "SEU_MESSAGING_SENDER_ID",
-  appId: "SEU_APP_ID"
-};
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCEPx5wwU4b1JneU5vHk5PUj-zSEfIOMPI",
+    authDomain: "studioapilates-86b2f.firebaseapp.com",
+    projectId: "studioapilates-86b2f",
+    storageBucket: "studioapilates-86b2f.firebasestorage.app",
+    messagingSenderId: "759690764481",
+    appId: "1:759690764481:web:4b755d3af9f9f55203b440",
+    measurementId: "G-3RP2JKJBZV"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
